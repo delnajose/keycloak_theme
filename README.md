@@ -48,10 +48,7 @@ docker run --name keycloak_local -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOA
 
 ```
 
-> **Note (Linux/macOS):**
-```bash
--v /home/user/keycloak-themes/themes:/opt/keycloak/themes
-```
+
 
 ```bash
 docker restart keycloak_local  # Restart after theme changes
