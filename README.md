@@ -44,9 +44,8 @@ The approach involves creating a custom Keycloak theme, configuring authenticati
 
 ### Docker Commands for Keycloak
 ```bash
-docker rm -f keycloak_local
-docker run --name keycloak_local -p 8080:8080   -e KEYCLOAK_ADMIN=admin   -e KEYCLOAK_ADMIN_PASSWORD=admin   -v C:\keycloak-themes\themes:/opt/keycloak/themes \  # Windows
-  quay.io/keycloak/keycloak:latest start-dev
+docker run --name keycloak_local -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin -v C:\keycloak-themes\themes:/opt/keycloak/themes quay.io/keycloak/keycloak:latest start-dev![Uploading image.png…]()
+
 ```
 
 > **Note (Linux/macOS):**
